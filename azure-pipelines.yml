@@ -1,12 +1,11 @@
 trigger:
-  -main
+  - main
 pool:
   name: Default
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
+
+variables:
+  buildConfiguration: 'Release'
+
 steps:
-- bash: echo hello world
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: dotnet build $(buildconfiguration)
