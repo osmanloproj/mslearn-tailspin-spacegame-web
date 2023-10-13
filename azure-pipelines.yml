@@ -1,4 +1,8 @@
-pool: MyAgentPool
+pool:
+  name: ADO_POOL_NAME
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
 steps:
 - bash: echo hello world
 - task: DotNetCoreCLI@2
