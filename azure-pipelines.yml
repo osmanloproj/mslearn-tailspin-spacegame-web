@@ -1,5 +1,5 @@
 pool:
-  name: ADO_POOL_NAME
+  name: Default
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
