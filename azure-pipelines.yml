@@ -1,7 +1,7 @@
 trigger:
   - main
 pool:
-  name: Default
+  name: agentfabrikamoscar
 
 variables:
   buildConfiguration: 'Release'
